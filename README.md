@@ -12,6 +12,6 @@ Once you have ran a test build and produced a test report. Create an additional 
 - [x]Document your added component or feature.
 - [x]Screenshot your failed test and document why your test failed.
 - [x]Screenshot your successful test build and document what you did to fix your failed test build  
-- [x]Initiate a pull request to the kura_labs_org/DEPLOY_3_TESTING repo with your documentation, screenshots(add screenshots to documentation), test_calc.py with your added test, and add2vals.py with your added feature or component.   
+- [x]Initiate a pull request to the kura_labs_org/DEPLOY_3_TEST repo with your documentation, screenshots(add screenshots to documentation), test_calc.py with your added test, and add2vals.py with your added feature or component.   
 
 👉Link to **some** helpful instructions: [here](https://github.com/kura-labs-org/DEPLOY03_TEST/blob/main/Deployment%203.pdf)  
