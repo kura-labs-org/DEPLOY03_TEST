@@ -43,6 +43,12 @@ class TestCalc(unittest.TestCase):
         """
         result = calc.add2('abc', '5.5')
         self.assertEqual(result, 'abc5.5')
+    def test_subtract_int(self): 
+        result = calc.subtract2(1, 2)
+        self.assertEqual(result,-1)
+    def test_subtract_float(self):
+        result = calc.subtract2('10.5', 2)
+        self.assertEqual(result, 8.5)
 
 if __name__ == '__main__':
     unittest.main()
