@@ -1,43 +1,19 @@
 pipeline {
-    agent none
+    agent any
     stages {
-        stage('Build') {
-            agent {
-                docker {
-                    image 'python:2-alpine'
-                }
-            }
+        stage('test') {
             steps {
-                sh 'python -m py_compile sources/add2vals.py sources/calc.py'
-            }
-        }
-        stage('Test') {
-            agent {
-                docker {
-                    image 'qnib/pytest'
-                }
-            }
-            steps {
-                sh 'py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py'
+                sh'''#!/bin/bash
+                python3 -m venv test3
+                source test3/bin/activate
+                pip install pip --upgrade
+                pip install pytest
+                py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py
+                '''
             }
             post {
-                always {
+                always { 
                     junit 'test-reports/results.xml'
-                }
-            }
-        }
-        stage('Deliver') {
-            agent {
-                docker {
-                    image 'cdrx/pyinstaller-linux:python2'
-                }
-            }
-            steps {
-                sh 'pyinstaller --onefile sources/add2vals.py'
-            }
-            post {
-                success {
-                    archiveArtifacts 'dist/add2vals'
                 }
             }
         }
