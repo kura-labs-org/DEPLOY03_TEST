@@ -8,7 +8,7 @@ pipeline {
         python3 -m venv test3
         pip install pip --upgrade
         pip install pytest
-        pytest --verbose --junit-xml test-reports/results.xml sources/test_calc.py
+        py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py
         '''
         
       }
