@@ -49,14 +49,14 @@ class TestCalc(unittest.TestCase):
         Test the addition of a string and a float returns them as one
         concatenated string (in which the float is converted to a string)
         """
-        result = calc.add2(4, 8)
+        result = calc.mul2(4, 8)
         self.assertEqual(result, 32)
 
     def test_multiply_floats(self):
         """
         Test that the addition of two floats returns the correct result
         """
-        result = calc.add2('10.5', 2)
+        result = calc.mul2('10.5', 2)
         self.assertEqual(result, 21.0)
 
 

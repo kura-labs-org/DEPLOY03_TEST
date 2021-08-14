@@ -1,7 +1,0 @@
-First build was completed using Freestyle Jenkins Pipeline option
-
-
-For second build, objective was add a feature that would fail with a new test when built with jenkins
--Adding testing for mul2 on the test py file
--Added a mul2 function to calc.py
--Pushing to git to update on Jenkins to build
