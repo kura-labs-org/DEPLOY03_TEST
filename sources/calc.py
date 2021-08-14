@@ -28,8 +28,8 @@ def add2(arg1, arg2):
     return arg1conv + arg2conv
 
 
-# The 'subtract2' function itself
-def subtract2(arg1, arg2):
+# The 'minus2' function itself
+def minus2(arg1, arg2):
     # Convert 'arg1' and 'arg2' to their appropriate types
     arg1conv = conv(arg1)
     arg2conv = conv(arg2)
