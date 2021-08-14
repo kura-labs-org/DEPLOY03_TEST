@@ -11,6 +11,7 @@ argnumbers = len(sys.argv) - 1
 if argnumbers == 2 :
     print("")
     print("The result is " + str(calc.add2(str(sys.argv[1]), str(sys.argv[2]))))
+    print(f"Bonus Info: The difference between the first and the second numbers is {str(calc.minus2(str(sys.argv[1]), str(sys.argv[2]))))}
     print("")
     sys.exit(0)
 
@@ -23,3 +24,5 @@ if argnumbers != 2 :
     print("       If unbundled, usage is 'python add2vals.py X Y'.")
     print("")
     sys.exit(1)
+    
+ 
