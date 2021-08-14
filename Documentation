@@ -5,3 +5,12 @@ For second build, objective was add a feature that would fail with a new test wh
 -Adding testing for mul2 on the test py file
 -Added a mul2 function to calc.py
 -Pushing to git to update on Jenkins to build
+-Build has indeed failed
+
+
+To fix this build. I needed to modify the add2cal file and modify the inherent functions of sys.arg of taking in two arguments
+in a single command and make it so that the user will select the operation as well as adding individual arguements as input.
+--changed lists from sys.arg to mod_number
+--changed the add2 variable to a if statement to call either add2 or mul2(which was added in the calc2)
+
+There are some unnecessary items in teh code that were edited out instead of being deleted in-case references were needed to undo this.
