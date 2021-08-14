@@ -18,7 +18,7 @@ class TestCalc(unittest.TestCase):
         Test that the addition of three integers returns the correct total
         """
         result = calc.add3(1,2,3)
-        self.assertEqual(result, 3)
+        self.assertEqual(result, 6)
 
     def test_add_floats(self):
         """
