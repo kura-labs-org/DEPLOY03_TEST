@@ -28,13 +28,13 @@ def add2(arg1, arg2):
     return arg1conv + arg2conv
 
 
-# The 'minus2' function itself
-def minus2(arg1, arg2):
+# The 'subtract2' function itself
+def subtract2(arg1, arg2):
     # Convert 'arg1' and 'arg2' to their appropriate types
     arg1conv = conv(arg1)
     arg2conv = conv(arg2)
     # If either 'arg1' or 'arg2' is a string, ensure they're both strings.
     if isinstance(arg1conv, str) or isinstance(arg2conv, str):
-        arg1conv = str(arg1conv)
-        arg2conv = str(arg2conv)
-    return arg1conv - arg2conv
+        return "We can't subtract those args, please enter two numbers if you wish to know the difference."
+    else:
+        return arg1conv - arg2conv
