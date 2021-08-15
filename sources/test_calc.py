@@ -44,7 +44,7 @@ class TestCalc(unittest.TestCase):
         result = calc.add2('abc', '5.5')
         self.assertEqual(result, 'abc5.5')
 
-"""
+    """
     Test the multiply function from the calc library
     """
 
