@@ -50,21 +50,21 @@ class TestCalc(unittest.TestCase):
 
     def test_multiply_integers(self):
         """
-        Test that the addition of two integers returns the correct total
+        Test that the multiplication of two integers returns the correct total
         """
         result = calc.multi2(1, 2)
         self.assertEqual(result, 2)
 
     def test_multiply_floats(self):
         """
-        Test that the addition of two floats returns the correct result
+        Test that the multiplication of two floats returns the correct result
         """
         result = calc.add2('10.5', 2)
         self.assertEqual(result, 21)
 
     def test_multiply_strings(self):
         """
-        Test the addition of two strings returns the two strings as one
+        Test the multiplication of two strings returns the two strings as one
         concatenated string
         """
         result = calc.add2('abc', 'def')
@@ -72,7 +72,7 @@ class TestCalc(unittest.TestCase):
 
     def test_multiply_string_and_integer(self):
         """
-        Test the addition of a string and an integer returns them as one
+        Test the multiplicationv of a string and an integer returns them as one
         concatenated string (in which the integer is converted to a string)
         """
         result = calc.add2('abc', 3)
@@ -80,7 +80,7 @@ class TestCalc(unittest.TestCase):
 
     def test_multiply_string_and_number(self):
         """
-        Test the addition of a string and a float returns them as one
+        Test the multiplication of a string and a float returns them as one
         concatenated string (in which the float is converted to a string)
         """
         result = calc.add2('abc', '5.5')
