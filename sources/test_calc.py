@@ -4,6 +4,7 @@ import calc
 class TestCalc(unittest.TestCase):
     """
     Test the add function from the calc library
+    Test the add and subrtact function from the calc library
     """
 
     def test_add_integers(self):
@@ -43,6 +44,14 @@ class TestCalc(unittest.TestCase):
         """
         result = calc.add2('abc', '5.5')
         self.assertEqual(result, 'abc5.5')
+        
+    def test_add2_sub1_integers(self):
+        """
+        Test that the addition of two integers and subtraction of one number and returns the correct total
+        """
+        result = calc.add2_sub1(1, 2, -3)
+        self.assertEqual(result, 0)
+
 
 if __name__ == '__main__':
     unittest.main()
