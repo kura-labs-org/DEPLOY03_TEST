@@ -50,7 +50,7 @@ class TestCalc(unittest.TestCase):
         Test that the addition of two integers and subtraction of one number and returns the correct total
         """
         result = calc.add2_sub1(1, 2, -3)
-        self.assertEqual(result, 0)
+        self.assertEqual(result, 6)
 
 
 if __name__ == '__main__':
