@@ -53,7 +53,7 @@ class TestCalc(unittest.TestCase):
         """
         Test that the addition of two floats returns the correct result
         """
-        result = calc.subtract2(7.6, 2)
+        result = calc.subtract2('7.6', 2)
         self.assertEqual(result, 5.6)
 
 if __name__ == '__main__':
