@@ -59,7 +59,7 @@ class TestCalc(unittest.TestCase):
         """
         Test that the multiplication of two floats returns the correct result
         """
-        result = calc.add2('10.5', 2)
+        result = calc.multi2('10.5', 2)
         self.assertEqual(result, 21)
 
     def test_multiply_strings(self):
@@ -67,7 +67,7 @@ class TestCalc(unittest.TestCase):
         Test the multiplication of two strings returns the two strings as one
         concatenated string
         """
-        result = calc.add2('abc', 'def')
+        result = calc.multi2('abc', 'def')
         self.assertEqual(result, 'abcdef')
 
     def test_multiply_string_and_integer(self):
@@ -75,7 +75,7 @@ class TestCalc(unittest.TestCase):
         Test the multiplicationv of a string and an integer returns them as one
         concatenated string (in which the integer is converted to a string)
         """
-        result = calc.add2('abc', 3)
+        result = calc.multi2('abc', 3)
         self.assertEqual(result, 'abcabcabc')
 
     def test_multiply_string_and_number(self):
@@ -83,7 +83,7 @@ class TestCalc(unittest.TestCase):
         Test the multiplication of a string and a float returns them as one
         concatenated string (in which the float is converted to a string)
         """
-        result = calc.add2('abc', '5.5')
+        result = calc.multi2('abc', '5.5')
         self.assertEqual(result, 'abcabcabcabcabc')
 
         
