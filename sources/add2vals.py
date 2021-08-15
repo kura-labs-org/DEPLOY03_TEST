@@ -8,14 +8,14 @@ import calc
 
 argnumbers = len(sys.argv) - 1
 
-if argnumbers == 2 :
+if argnumbers == 3 :
     print("")
-    print("The result is " + str(calc.add2(str(sys.argv[1]), str(sys.argv[2]))))
-    print("The result is " + str(calc.subtract2(str(sys.argv[1]), str(sys.argv[2]))))
+    print("The result is " + str(calc.add2(str(sys.argv[1]), str(sys.argv[2]), str(sys.argv[1]))))
+    print("The result is " + str(calc.subtract2(str(sys.argv[1]), str(sys.argv[2]), str(sys.argv[1]))))
     print("")
     sys.exit(0)
 
-if argnumbers != 2 :
+if argnumbers != 3 :
     print("")
     print("You entered " + str(argnumbers) + " value/s.")
     print("")
