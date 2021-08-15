@@ -41,14 +41,14 @@ class TestCalc(unittest.TestCase):
         """
         Test that the addition of two integers returns the correct total
         """
-        result = calc.subtract2(1, 2, 3)
+        result = calc.subtract3(1, 2, 3)
         self.assertEqual(result, -4)
 
     def test_subtract_floats(self):
         """
         Test that the addition of two floats returns the correct result
         """
-        result = calc.subtract2('10.5', 2, 3)
+        result = calc.subtract3('10.5', 2, 3)
         self.assertEqual(result, 5.5)
 
 
