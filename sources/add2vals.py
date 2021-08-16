@@ -14,7 +14,7 @@ if argnumbers == 3 :
     print("")
     sys.exit(0)
 
-elif argnumbers != 3 and argnumbers != 2:
+elif argnumbers != 3 or argnumbers != 2:
     print("")
     print("You entered " + str(argnumbers) + " value/s.")
     print("")
