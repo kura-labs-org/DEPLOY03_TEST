@@ -48,33 +48,18 @@ class TestCalc(unittest.TestCase):
     
      def test_am_integers(self):
         """
-        Test that the multiplication of two integers returns the correct total
+        Test that the multiplication of three integers returns the correct total
         """
         result = calc.multiply3(1, 2,3)
         self.assertEqual(result, 6)
 
     def test_multiply_floats(self):
         """
-        Test that the multiplication of two floats returns the correct result
+        Test that the multiplication of three floats returns the correct result
         """
         result = calc.multiply3('10.5', 2, 11)
         self.assertEqual(result, 231)
 
-    def test_multiply_strings(self):
-        """
-        Test the multiplication of two strings returns the two strings as one
-        concatenated string
-        """
-        result = calc.multiply3('abc', 'def', 'ghi')
-        self.assertEqual(result, 'abcdefghi')
-
-    def test_multiply_string_and_integer(self):
-        """
-        Test the multiplication of a string and an integer returns them as one
-        concatenated string (in which the integer is converted to a string)
-        """
-        result = calc.multiply3('abc', 3)
-        self.assertEqual(result, 'abc3abc3abc3') 
-
+        
 if __name__ == '__main__':
     unittest.main()
