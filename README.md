@@ -34,5 +34,21 @@ pipeline {
 4. Click build now on your Jenkins dashboard to see your first successful build. 
    ![First Test Build](first_success.png)
 
-5. 
+5. Now to follow the spirit of Test Driven Development we are going to write the test cases for our new feature of multiplying by 2.
+6. Create a new python file titled test_multiply2vals.py and enter the following lines
+```
+# test_multiply2vals.py
+import pytest
+
+def test_float_multiplication():
+        """
+        Test that multiplication between an integer/float and another integer/float
+        will return the correct value
+
+        """
+
+        result = calc.multiply('3.6', '5.4')
+        assert result == (3.6*5.4)
+
+```
 
