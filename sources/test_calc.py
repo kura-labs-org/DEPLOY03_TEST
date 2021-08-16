@@ -46,7 +46,7 @@ class TestCalc(unittest.TestCase):
         
     #multiply 3
     
-     def test_am_integers(self):
+    def test_am_integers(self):
         """
         Test that the multiplication of three integers returns the correct total
         """
