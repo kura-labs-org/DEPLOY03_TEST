@@ -68,7 +68,7 @@ class TestCalc(unittest.TestCase):
         concatenated string
         """
         result = calc.multi2('abc', 'def')
-        self.assertEqual(result, 'abcdef')
+        self.assertEqual(result, 'Can not multiply two strings nor a float and a string')
 
     def test_multiply_string_and_integer(self):
         """
@@ -78,13 +78,13 @@ class TestCalc(unittest.TestCase):
         result = calc.multi2('abc', 3)
         self.assertEqual(result, 'abcabcabc')
 
-    def test_multiply_string_and_number(self):
+    def test_multiply_string_and_float(self):
         """
         Test the multiplication of a string and a float returns them as one
         concatenated string (in which the float is converted to a string)
         """
         result = calc.multi2('abc', '5.5')
-        self.assertEqual(result, 'abcabcabcabcabc')
+        self.assertEqual(result, 'Can not multiply two strings nor a float and a string')
 
         
 if __name__ == '__main__':
