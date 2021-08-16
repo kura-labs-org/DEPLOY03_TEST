@@ -33,9 +33,10 @@ def multiply(arg1, arg2):
     arg2 = conv(arg2)
 
     if (isinstance(arg1,(int,float)) and isinstance(arg2,(int,float))):
+        print(arg1,arg2)
         return arg1 * arg2
         
 
     else:
-        return ' Error: Arguments must be an integer or float'
+        return 'Error: Arguments must be an integer or float'
     
