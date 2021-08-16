@@ -29,14 +29,13 @@ if __name__ == '__main__':
       
     if (number1 != False) and (number2 != False):
         print("")
-        print("The result is " + str(calc.multi2(str(number1), str(number2))))
+        print("The result is: " + str(calc.multi2(str(number1), str(number2))))
         print("")
         sys.exit(0)
     else:
         print("")
-        print("You entered non-number value/s.")
-        print("")
-        print("Usage: 'multi2vals' where user is pompted to enter 2 numbers.")
+        print("Usage: 'multi2vals' where user is pompted to enter 2 values.")
+        print("       Values can not be two strings nor a float and a string.")
         print("       If multi2vals is not in your path, usage is './multi2vals'.")
         print("       If unbundled, usage is 'python multi2vals.py'.")
         print("")
