@@ -10,13 +10,13 @@ argnumbers = len(sys.argv) - 1
 
 if argnumbers == 3 :
     print("")
-    print("The result is " + str(calc.add2(str(sys.argv[1]), str(sys.argv[2]), str(sys.argv[3]))))
+    print("The result is " + str(calc.subtract(str(sys.argv[1]), str(sys.argv[2]), str(sys.argv[3]))))
     print("")
     sys.exit(0)
     
 elif argnumbers == 2:
     print("")
-    print("The result is " + str(calc.subtract3(str(sys.argv[1]), str(sys.argv[2]))))
+    print("The result is " + str(calc.add2(str(sys.argv[1]), str(sys.argv[2]))))
     print("")
     sys.exit(0)
 
