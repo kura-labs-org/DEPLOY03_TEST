@@ -27,7 +27,7 @@ Adjustment were made to code and some to account for proper multiiplication logi
 Function now checks to see if one value is a string and the other is a numnber and does not automatically convert both to strings
 
 ### Multiplying a float by a string
-The function now rounds off a float to an integer and then multiplies it by a string and infomrs the user of this roundingg
+The function now informs the user that a float and a string can not be multiplied
 
 ### Multiplying two strings
 The function now informs the user that two strings can not be multiplied
