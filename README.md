@@ -1,17 +1,38 @@
-# DEPLOY03_TEST
+# Deployment 3 Jenkins with Pytest
 
-<h1 align=center>Deployment 3</h1>
+## Steps
 
-Welcome to deployment 3. We have been covering the fundamentals of python, now it’s time to apply your python knowledge to a python application called Add2Vals. This python application is a simple command line application that adds two arguments and outputs the value to the user. You have been tasked to first test the Add2Val application with the already made test_calc.py and produce an XML report. 
+1. Created an EC2 instance hosting a Jenkins pipeline. 
+    - Make sure git and jenkins is installed.
+2. Create a Jenkinsfile in the root of your Github repository which Jenkins will be accessing. 
+```
+pipeline {
+  agent any
+  stages {
+    stage('test') {
+      steps {
+        sh ''' #!/bin/bash 
+        python3 -m venv test3
+        source test3/bin/activate
+        pip install pip --upgrade
+        pip install pytest
+        py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py
+        '''
+        
+      }
+      post{
+        always {
+          junit 'test-reports/results.xml'
+        }
+      }
+    }
+  }
+}
+```
 
-Once you have ran a test build and produced a test report. Create an additional feature or component to the Add2Vals application. Create a test that will fail when you test Add2 a second time and then get your test to pass. 
+3. Create a new multi-branch pipeline in Jenkins hooked to the Github repo with your credentials. 
+4. Click build now on your Jenkins dashboard to see your first successful build. 
+   ![First Test Build](first_success.png)
 
-***Documentation and screenshot requirements:*** 
-- [x]Fork (https://github.com/kura-labs-org/DEPLOY03_TEST)
-- [x]Screenshot the first successful test build.
-- [x]Document your added component or feature.
-- [x]Screenshot your failed test and document why your test failed.
-- [x]Screenshot your successful test build and document what you did to fix your failed test build  
-- [x]Initiate a pull request to the kura_labs_org/DEPLOY_3_TESTING repo with your documentation, screenshots(add screenshots to documentation), test_calc.py with your added test, and add2vals.py with your added feature or component.   
+5. 
 
-👉Link to **some** helpful instructions: [here](https://github.com/kura-labs-org/DEPLOY03_TEST/blob/main/Deployment%203.pdf)  
