@@ -1,4 +1,5 @@
 import unittest
+from unittest import result
 import calc
 
 class TestCalc(unittest.TestCase):
@@ -43,6 +44,36 @@ class TestCalc(unittest.TestCase):
         """
         result = calc.add2('abc', '5.5')
         self.assertEqual(result, 'abc5.5')
+
+    def test_multiplication(self):
+        """
+        Test that multiplication between an integer/float and another integer/float
+        will return the correct value
+
+        """
+
+        result = calc.multiply(3,3)
+        self.assertEqual(result, 9)
+
+    def test_float_multiplication(self):
+        """
+        Test that multiplication between an integer/float and another integer/float
+        will return the correct value
+
+        """
+
+        result = calc.multiply('3.6', '5.4')
+        self.assertEqual(result,3.6*5.4)
+
+    def test_string_multiplication(self):
+        """
+        Test that a user can't multiply strings.
+        """
+
+        result = calc.multiply('3', 'A string')
+        
+        self.assertEqual(result, 'Error: Arguments must be an integer or float')
+
 
 if __name__ == '__main__':
     unittest.main()
