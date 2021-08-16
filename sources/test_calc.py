@@ -59,12 +59,12 @@ class TestCalc(unittest.TestCase):
         result = calc.sub3('10.5', 2, 20)
         self.assertEqual(result, -11.5)
         
-       def test_add_strings(self):
+       def test_sub_strings(self):
         """
         Test the addition of two strings returns the two strings as one
         concatenated string
         """
-        result = calc.add2('abc', 'def', 'ghi')
+        result = calc.sub3('abc', 'def', 'ghi')
         self.assertEqual(result, 'abcdefghi')
 
 if __name__ == '__main__':
