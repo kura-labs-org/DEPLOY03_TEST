@@ -52,4 +52,5 @@ def multi2(arg1, arg2):
         (isinstance(arg1conv, int) and isinstance(arg2conv, float)) or \
         (isinstance(arg1conv, float) and isinstance(arg2conv, int)):
         return arg1conv * arg2conv
-    else return 'Can not multiply two strings nor a float and a string'
+    else: 
+        return 'Can not multiply two strings nor a float and a string'
