@@ -50,7 +50,7 @@ class TestCalc(unittest.TestCase):
         """
         Test that the multiplication of three integers returns the correct total
         """
-        result = calc.multiply3(1, 2,3)
+        result = calc.multiply3(1, 2, 3)
         self.assertEqual(result, 6)
 
     def test_multiply_floats(self):
