@@ -23,9 +23,9 @@ if __name__ == '__main__':
     number1 = False
     number2 = False
 
-    number1 = _input("Enter your first number : ", float)
+    number1 = _input("Enter your first number : ", str)
     if number1 != False:
-      number2 = _input("Enter your second number : ", float)
+      number2 = _input("Enter your second number : ", str)
       
     if (number1 != False) and (number2 != False):
         print("")
