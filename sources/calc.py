@@ -26,3 +26,16 @@ def add2(arg1, arg2):
         arg1conv = str(arg1conv)
         arg2conv = str(arg2conv)
     return arg1conv + arg2conv
+
+def multiply(arg1, arg2):
+    # Ensure both arguments are ints or float
+    arg1 = conv(arg1)
+    arg2 = conv(arg2)
+
+    if (isinstance(arg1,(int,float)) and isinstance(arg2,(int,float))):
+        return arg1 * arg2
+        
+
+    else:
+        return ' Error: Arguments must be an integer or float'
+    
