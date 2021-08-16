@@ -13,6 +13,12 @@ if argnumbers == 3 :
     print("The result is " + str(calc.add2(str(sys.argv[1]), str(sys.argv[2]), str(sys.argv[3]))))
     print("")
     sys.exit(0)
+    
+elif argnumbers == 2:
+    print("")
+    print("The result is " + str(calc.subtract3(str(sys.argv[1]), str(sys.argv[2]))))
+    print("")
+    sys.exit(0)
 
 elif argnumbers != 3 or argnumbers != 2:
     print("")
@@ -24,11 +30,5 @@ elif argnumbers != 3 or argnumbers != 2:
     print("       If unbundled, usage is 'python add2vals.py X Y'.")
     print("")
     sys.exit(1)
-    
-elif argnumbers == 2:
-    print("")
-    print("The result is " + str(calc.subtract3(str(sys.argv[1]), str(sys.argv[2]))))
-    print("")
-    sys.exit(0)
     
     
