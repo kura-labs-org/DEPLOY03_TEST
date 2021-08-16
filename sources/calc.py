@@ -39,4 +39,3 @@ def multiply(arg1, arg2):
 
     else:
         return 'Error: Arguments must be an integer or float'
-    
