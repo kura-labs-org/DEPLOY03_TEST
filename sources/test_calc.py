@@ -44,5 +44,20 @@ class TestCalc(unittest.TestCase):
         result = calc.add2('abc', '5.5')
         self.assertEqual(result, 'abc5.5')
 
+
+    def test_sub_integers(self):
+        """
+        Test that the addition of two integers returns the correct total
+        """
+        result = calc.sub3(1, 2, 3)
+        self.assertEqual(result, -4)
+
+    def test_sub_floats(self):
+        """
+        Test that the addition of two floats returns the correct result
+        """
+        result = calc.sub3('10.5', 2, 20)
+        self.assertEqual(result, -11.5)
+
 if __name__ == '__main__':
     unittest.main()
