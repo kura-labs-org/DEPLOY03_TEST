@@ -29,13 +29,14 @@ def add2(arg1, arg2):
 
 def multiply(arg1, arg2):
     # Ensure both arguments are ints or float
-    arg1 = conv(arg1)
-    arg2 = conv(arg2)
+    #arg1 = conv(arg1)
+    #arg2 = conv(arg2)
 
-    if (isinstance(arg1,(int,float)) and isinstance(arg2,(int,float))):
-        print(arg1,arg2)
-        return arg1 * arg2
+    #if (isinstance(arg1,(int,float)) and isinstance(arg2,(int,float))):
+        #print(arg1,arg2)
+        #return arg1 * arg2
         
 
-    else:
-        return 'Error: Arguments must be an integer or float'
+    #else:
+        #return 'Error: Arguments must be an integer or float'
+    return 'Testing failures'
