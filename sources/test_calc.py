@@ -54,7 +54,7 @@ class TestCalc(unittest.TestCase):
         """
         Test that the addition of two floats returns the correct result
         """
-        result = calc.add2('10.5', 2, 7)
+        result = calc.add3('10.5', 2, 7)
         self.assertEqual(result, 19.5)
 
     def test_add_strings(self):
@@ -62,7 +62,7 @@ class TestCalc(unittest.TestCase):
         Test the addition of two strings returns the two strings as one
         concatenated string
         """
-        result = calc.add2('abc', 'def','ghi')
+        result = calc.add3('abc', 'def','ghi')
         self.assertEqual(result, 'abcdefghi')
 
     def test_add_string_and_integer(self):
@@ -70,7 +70,7 @@ class TestCalc(unittest.TestCase):
         Test the addition of a string and an integer returns them as one
         concatenated string (in which the integer is converted to a string)
         """
-        result = calc.add2('abc', 3, 'd')
+        result = calc.add3('abc', 3, 'd')
         self.assertEqual(result, 'abc3d')
 
     def test_add_string_and_number(self):
@@ -78,7 +78,7 @@ class TestCalc(unittest.TestCase):
         Test the addition of a string and a float returns them as one
         concatenated string (in which the float is converted to a string)
         """
-        result = calc.add2('abc', '5.5','def')
+        result = calc.add3('abc', '5.5','def')
         self.assertEqual(result, 'abc5.5def')
 
 
