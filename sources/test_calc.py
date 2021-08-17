@@ -67,35 +67,5 @@ class TestSecondCalc(unittest.TestCase):
         result = calc.minus2('10.5', 2)
         self.assertEqual(result, 8.5)
 
-    def test_minus_strings(self):
-        """
-        Test the subtraction of two strings returns the two strings as one
-        concatenated string
-        """
-        try:
-            result = calc.minus2('abc', 'def')
-        except TypeError:
-            self.assertEqual(result, TypeError)
-
-    def test_minus_string_and_integer(self):
-        """
-        Test the subtraction of a string and an integer returns them as one
-        concatenated string (in which the integer is converted to a string)
-        """
-        try:
-            result = calc.minus2('abc', 3)
-        except TypeError:
-            self.assertEqual(result, TypeError)
-
-    def test_minus_string_and_number(self):
-        """
-        Test the subtraction of a string and a float returns them as one
-        concatenated string (in which the float is converted to a string)
-        """
-        try:
-            result = calc.minus2('abc', '5.5')
-        except TypeError:
-            self.assertEqual(result, TypeError)
-
 if __name__ == '__main__':
     unittest.main()
