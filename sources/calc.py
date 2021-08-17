@@ -27,7 +27,7 @@ def add2(arg1, arg2):
         arg2conv = str(arg2conv)
     return arg1conv + arg2conv
 
-def add3(arg1, arg2):
+def add3(arg1, arg2, arg3):
     # Convert 'arg1' and 'arg2' to their appropriate types
     arg1conv = conv(arg1)
     arg2conv = conv(arg2)
