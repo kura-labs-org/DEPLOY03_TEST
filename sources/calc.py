@@ -26,3 +26,12 @@ def add2(arg1, arg2):
         arg1conv = str(arg1conv)
         arg2conv = str(arg2conv)
     return arg1conv + arg2conv
+def add3(arg1,arg2,arg3):
+    arg1conv = conv(arg1)
+    arg2conv = conv(arg2)
+    arg3conv = conv(arg3)
+    if isinstance(arg1conv,str) or isinstance(arg2conv,str) or isinstance(arg3conv,str):
+        arg1conv = str(arg1conv)
+        arg2conv = str(arg2conv)
+        arg3conv = str(arg3conv)
+    return arg1conv + arg2conv + arg3conv
