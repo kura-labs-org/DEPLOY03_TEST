@@ -19,16 +19,6 @@ pipeline {
         always {
           junit 'test-reports/results.xml'
         }
-        failure {
-            emailext attachmentsPattern: "**/packages/rpm/splitted/${file}",
-              to: "zscyrus31@gmail.com",
-            from: "Jenkins",
-         subject: "[jenkins] ${packageFullName}: part ${part}/${files.size()}",
-            body: "File received: \'${file}\'\n" +
-                  "From package:  \'${packageFullName}\'\n" +
-                  "Package MD5:   \'${mainMdFiveSum}\'\n" +
-                  "Jenkins Build: \'${env.BUILD_URL}\'\n"
-        }
       }
     }
   }
