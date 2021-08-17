@@ -45,6 +45,6 @@ class TestCalc(unittest.TestCase):
     #appending
     def test_add_three_int(self):
         result = calc.add3(3,3,3)
-        self.assertEqual(result,10)
+        self.assertEqual(result,9)
 if __name__ == '__main__':
     unittest.main()
