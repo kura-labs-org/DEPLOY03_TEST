@@ -108,5 +108,5 @@ else:
     return 'Error: Arguments must be an integer or float'
 
 ```
-11. Since the multiply function has been added to the calc library, our tests should now pass when Jenkins runs them. Remember to push the finished code to the repo on Github.  
+11. Since the multiply function has been added to the calc library, our tests should now pass when Jenkins runs them. Remember to push the finished code to the repo on Github!
     ![Successful Test Implementation](success_after_test.png)
