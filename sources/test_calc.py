@@ -50,6 +50,21 @@ class TestCalc(unittest.TestCase):
         """
         result = calc.add2('abc', '5.5')
         self.assertEqual(result, 'abc5.5')
+        
+    def test_multiply_integers(self):
+        """
+        Test that the multiplication of two integers returns the correct total
+        """
+        result = calc.mul3(1, 2, 3)
+        self.assertEqual(result, 6)
+
+    def test_multiply_floats(self):
+        """
+        Test that the multiplication of two floats returns the correct result
+        """
+        result = calc.mul3('5.5', 2, 3)
+        self.assertEqual(result, 33)
+
 
 if __name__ == '__main__':
     unittest.main()
