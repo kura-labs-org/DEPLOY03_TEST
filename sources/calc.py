@@ -41,5 +41,5 @@ def multiply(arg1, arg2):
     arg2conv = conv(arg2)
     # If either 'arg1' or 'arg2' is a string, print error message.
     if isinstance(arg1conv, str) or isinstance(arg2conv, str):
-        print("Error: Please avoid entering string values if you want to multiply the values.")
+        return 'Error: Please avoid entering string values if you want to multiply the values.'
     return arg1conv * arg2conv
