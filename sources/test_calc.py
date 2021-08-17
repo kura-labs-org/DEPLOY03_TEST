@@ -46,3 +46,26 @@ class TestCalc(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+    
+    
+class TestSecondCalc(unittest.TestCase):
+    """
+    Test the minus function from the calc library
+    """
+
+    def test_minus_integers(self):
+        """
+        Test that the subtraction of two integers returns the correct total
+        """
+        result = calc.minus2(1, 2)
+        self.assertEqual(result, -1)
+
+    def test_minus_floats(self):
+        """
+        Test that the subtractions of two floats returns the correct result
+        """
+        result = calc.minus2('10.5', 2)
+        self.assertEqual(result, 8.5)
+
+if __name__ == '__main__':
+    unittest.main()
