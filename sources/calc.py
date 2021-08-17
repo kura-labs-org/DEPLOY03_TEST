@@ -4,6 +4,11 @@ them together. If either value is a string (or both of them are) 'add2' ensures
 they are both strings, thereby resulting in a concatenated result.
 NOTE: If a value submitted to the 'add2' function is a float, it must be done so
 in quotes (i.e. as a string).
+The 'calc' library contains the 'add2_sub1' function that takes 3 values and adds 
+2 together and subtract. If either value is a string (or both of them are) 'add2_sub1' ensures
+they three strings, thereby resulting in a concatenated result.
+NOTE: If a value submitted to the 'add2_sub1' function is a float, it must be done so
+in quotes (i.e. as a string).
 '''
 
 # If 'value' is not an integer, convert it to a float and failing that, a string.
@@ -26,3 +31,17 @@ def add2(arg1, arg2):
         arg1conv = str(arg1conv)
         arg2conv = str(arg2conv)
     return arg1conv + arg2conv
+
+
+# The 'add2_sub1' function itself
+def add2_sub1(arg1, arg2,arg3):
+    # Convert 'arg1' 'arg2' and 'arg3" to their appropriate types
+    arg1conv = conv(arg1)
+    arg2conv = conv(arg2)
+    arg3conv = conv(arg3)
+    # If either 'arg1' 'arg2'  or 'arg3' is a string, ensure they're both strings.
+    if isinstance(arg1conv, str) or isinstance(arg2conv, str) or isinstance(arg3conv, str):
+        arg1conv = str(arg1conv)
+        arg2conv = str(arg2conv)
+        arg3conv = str(arg3conv)
+    return arg1conv + arg2conv - arg3conv
