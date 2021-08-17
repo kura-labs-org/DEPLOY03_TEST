@@ -26,3 +26,20 @@ def add2(arg1, arg2):
         arg1conv = str(arg1conv)
         arg2conv = str(arg2conv)
     return arg1conv + arg2conv
+
+'''
+  If the arguments entered are integers or floats, the 'calc' library will 
+  multiply them and retun the result.
+  If one of the arguments (or both are) is a string(s), the 'calc' library will 
+  return "Do not enter strings values if you want to multiply."
+'''
+
+# The 'multiply' function itself (added feature)
+def multiply(arg1, arg2):
+    # Convert 'arg1' and 'arg2' to their appropriate types
+    arg1conv = conv(arg1)
+    arg2conv = conv(arg2)
+    # If either 'arg1' or 'arg2' is a string, print error message.
+    if isinstance(arg1conv, str) or isinstance(arg2conv, str):
+        print("Error: Please avoid entering string values if you want to multiply the values.")
+    return arg1conv * arg2conv
