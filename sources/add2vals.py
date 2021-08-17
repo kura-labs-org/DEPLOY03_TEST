@@ -27,7 +27,7 @@ if argnumbers != 2 :
  '''
     This is for the added feature for multiplication.
  '''
- if argnumbers == 2 and argnumbers != str:
+ if argnumbers == 2 and argnumbers != str :
     print("")
     print("The result is " + str (calc.multiply((sys.argv[1]), (sys.argv[2]))))
     print("")
