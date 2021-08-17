@@ -6,19 +6,12 @@ class TestCalc(unittest.TestCase):
     Test the add function from the calc library
     """
 
-     def test_add_integers(self):
+    def test_add_integers(self):
         """
         Test that the addition of two integers returns the correct total
         """
         result = calc.add2(2, 4)
         self.assertEqual(result, 6)
-
-    def test_add_floats(self):
-        """
-        Test that the addition of two floats returns the correct result
-        """
-        result = calc.add2('8.5', 4)
-        self.assertEqual(result, 12.5)
 
     def test_add_floats(self):
         """
