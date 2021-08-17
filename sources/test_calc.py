@@ -59,7 +59,7 @@ class TestCalc(unittest.TestCase):
         """
         Test that the multiplication of two floats returns the correct result
         """
-        result = calc.add2('10.5', 2)
+        result = calc.multiply('10.5', 2)
         self.assertEqual(result, 21)
         
     def test_multiply_strings(self):
@@ -73,14 +73,14 @@ class TestCalc(unittest.TestCase):
         """
         Test the addition of a string and an integer returns an error
         """
-        result = calc.add2('abc', 3)
+        result = calc.multiply('abc', 3)
         self.assertEqual(result, 'Error: Please avoid entering string values if you want to multiply the values.')
 
     def test_add_string_and_number(self):
         """
         Test the addition of a string and a float returns an error
         """
-        result = calc.add2('abc', '5.5')
+        result = calc.multiply('abc', '5.5')
         self.assertEqual(result, 'Error: Please avoid entering string values if you want to multiply the values.')
 
 if __name__ == '__main__':
