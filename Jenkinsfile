@@ -19,6 +19,12 @@ pipeline {
         always {
           junit 'test-reports/results.xml'
         }
+        failure {
+          def jobName = currentBuild.fullDisplayName
+          emailext body: '''${SCRIPT, template="text"}''',
+            subject: "[Jenkins] ${jobName}",
+            to: "zscyrus31@gmail.com"
+        }
       }
     }
   }
