@@ -42,11 +42,11 @@ pipeline {
 ```
 
 4. Create a new multi-branch pipeline in Jenkins hooked to the Github repo with your credentials. 
-5. Make a Github webhook that will notify Jenkins of a new push to the Repository. 
+5. Make a Github webhook that will notify Jenkins of a new push to the repository. 
 6. Click build now on your Jenkins dashboard to see your first successful build. 
    ![First Test Build](first_success.png)
 
-7. Now to follow the spirit of Test Driven Development we are going to write the test cases for our new feature of multiplying by 2.
+7. Now to follow the spirit of test driven development we are going to write the test cases for our new feature of multiplying by 2.
 
 ### Multiplying By 2 Feature 
 8. Create a new python file titled test_multiply2vals.py and enter the following lines
