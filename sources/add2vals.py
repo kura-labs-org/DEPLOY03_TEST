@@ -23,3 +23,12 @@ if argnumbers != 2 :
     print("       If unbundled, usage is 'python add2vals.py X Y'.")
     print("")
     sys.exit(1)
+    
+ '''
+    This is for the added feature for multiplication.
+ '''
+ if argnumbers == 2 and argnumbers != str:
+    print("")
+    print("The result is " + str (calc.multiply((sys.argv[1]), (sys.argv[2]))))
+    print("")
+    sys.exit(2)
