@@ -10,8 +10,8 @@ class TestCalc(unittest.TestCase):
         """
         Test that the addition of two integers returns the correct total
         """
-        result = calc.add2(1, 2)
-        self.assertEqual(result, 3)
+        result = calc.add2(2, 3)
+        self.assertEqual(result, 5)
 
     def test_add_floats(self):
         """
@@ -36,13 +36,21 @@ class TestCalc(unittest.TestCase):
         result = calc.add2('abc', 3)
         self.assertEqual(result, 'abc3')
 
-    def test_add_string_and_number(self):
+    
+    def test_subtract_integers(self):
         """
-        Test the addition of a string and a float returns them as one
-        concatenated string (in which the float is converted to a string)
+        Test that the addition of two integers returns the correct total
         """
-        result = calc.add2('abc', '5.5')
-        self.assertEqual(result, 'abc5.5')
+        result = calc.subtract3(1, 2, 3)
+        self.assertEqual(result, -4)
+
+    def test_subtract_floats(self):
+        """
+        Test that the addition of two floats returns the correct result
+        """
+        result = calc.subtract3('10.5', 2, 3)
+        self.assertEqual(result, 5.5)
+
 
 if __name__ == '__main__':
     unittest.main()
