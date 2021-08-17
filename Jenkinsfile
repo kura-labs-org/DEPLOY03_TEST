@@ -24,7 +24,6 @@ pipeline {
                     to: "zscyrus31@gmail.com", 
                     subject: "Build failed in Jenkins: $Deployment - #$BUILD_NUMBER"
         }
-        }
       }
     }
   }
