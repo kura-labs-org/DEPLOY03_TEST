@@ -20,9 +20,14 @@ pipeline {
           junit 'test-reports/results.xml'
         }
         failure {
-            emailext body: "Check console output at $BUILD_URL to view the results. \n\n ${CHANGES} \n\n -------------------------------------------------- \n${BUILD_LOG, maxLines=100, escapeHtml=false}", 
-                    to: "zscyrus31@gmail.com", 
-                    subject: "Build failed in Jenkins: $Deployment - #$BUILD_NUMBER"
+            emailext attachmentsPattern: "**/packages/rpm/splitted/${file}",
+              to: "${to}",
+            from: "Jenkins",
+         subject: "[jenkins] ${packageFullName}: part ${part}/${files.size()}",
+            body: "File received: \'${file}\'\n" +
+                  "From package:  \'${packageFullName}\'\n" +
+                  "Package MD5:   \'${mainMdFiveSum}\'\n" +
+                  "Jenkins Build: \'${env.BUILD_URL}\'\n"
         }
       }
     }
