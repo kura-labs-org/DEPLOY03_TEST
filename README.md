@@ -58,7 +58,7 @@ import calc
 def test_multiplication():
         """
         Test that multiplication between an integer/float and another integer/float
-        will return the correct value
+        will return the correct value.
 
         """
 
@@ -68,7 +68,7 @@ def test_multiplication():
 def test_float_multiplication():
         """
         Test that multiplication between an integer/float and another integer/float
-        will return the correct value
+        will return the correct value.
 
         """
 
@@ -78,7 +78,7 @@ def test_float_multiplication():
 
 def test_string_multiplication():
         """
-        Test that a user can't multiply strings.
+        Test that a user can't multiply strings. And that it will return the correct error.
         """
 
         result = calc.multiply('3', 'A string')
