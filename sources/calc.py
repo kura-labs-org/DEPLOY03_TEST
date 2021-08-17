@@ -29,7 +29,6 @@ def add2(arg1, arg2):
 
 def multiply(arg1, arg2):
     #Ensure both arguments are ints or float
-    return 'Not working'
     arg1 = conv(arg1)
     arg2 = conv(arg2)
 
