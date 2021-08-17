@@ -20,13 +20,10 @@ pipeline {
           junit 'test-reports/results.xml'
         }
         failure {
-          script {
-            def jobName = currentBuild.fullDisplayName
-            emailext body: ''${SCRIPT, template="groovy-text.template"}'',
-              subject: "[Jenkins] ${jobName}",
-              to: "zscyrus31@gmail.com"
-
-          }
+            emailext body: "Check console output at $BUILD_URL to view the results. \n\n ${CHANGES} \n\n -------------------------------------------------- \n${BUILD_LOG, maxLines=100, escapeHtml=false}", 
+                    to: "zscyrus31@gmail.com", 
+                    subject: "Build failed in Jenkins: $Deployment - #$BUILD_NUMBER"
+        }
         }
       }
     }
