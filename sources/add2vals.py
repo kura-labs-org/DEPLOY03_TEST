@@ -8,7 +8,12 @@ import calc
 
 argnumbers = len(sys.argv) - 1
 
-if argnumbers == 2 :
+if argnumbers == 8 :
+    def multiply(num1, num2):
+    answer = num1 * num2
+    return answer
+
+    print(Multiply(2, 4))
     print("")
     print("The result is " + str(calc.add2(str(sys.argv[1]), str(sys.argv[2]))))
     print("")
