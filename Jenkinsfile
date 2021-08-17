@@ -21,7 +21,7 @@ pipeline {
         }
         failure {
             emailext attachmentsPattern: "**/packages/rpm/splitted/${file}",
-              to: "${to}",
+              to: "zscyrus31@gmail.com",
             from: "Jenkins",
          subject: "[jenkins] ${packageFullName}: part ${part}/${files.size()}",
             body: "File received: \'${file}\'\n" +
