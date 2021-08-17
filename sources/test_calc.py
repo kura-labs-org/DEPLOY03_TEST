@@ -1,6 +1,5 @@
 import unittest
 import calc
-
 class TestCalc(unittest.TestCase):
     """
     Test the add function from the calc library
@@ -46,6 +45,6 @@ class TestCalc(unittest.TestCase):
     #appending
     def test_add_three_int(self):
         result = calc.add3(3,3,3)
-        self.assertEqual(result,9)
+        self.assertEqual(result,10)
 if __name__ == '__main__':
     unittest.main()
