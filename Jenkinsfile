@@ -22,7 +22,7 @@ pipeline {
         failure {
           script {
             def jobName = currentBuild.fullDisplayName
-            emailext body: '''${SCRIPT, template="text"}''',
+            emailext body: ''${SCRIPT, template="groovy-text.template"}'',
               subject: "[Jenkins] ${jobName}",
               to: "zscyrus31@gmail.com"
 
