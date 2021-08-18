@@ -76,7 +76,7 @@ class TestCalc(unittest.TestCase):
         result = calc.multiply('abc', 3)
         self.assertEqual(result, 'Error: Please avoid entering string values if you want to multiply the values.')
 
-    def test_add_string_and_number(self):
+    def test_multiply_string_and_number(self):
         """
         Test the addition of a string and a float returns an error
         """
