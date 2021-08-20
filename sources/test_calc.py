@@ -56,7 +56,7 @@ class TestCalc(unittest.TestCase):
 #         self.assertEqual(result, -6)
 
      def add_num_decimals(self):
-        result = calc.add2(0.8,2,-1.2,4):
+        result = calc.add2('0.8',2,'-1.2',4):
         self.assertEqual(result, 5.6)
 
 if __name__ == '__main__':
