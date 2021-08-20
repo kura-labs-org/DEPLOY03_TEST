@@ -47,7 +47,7 @@ class TestCalc(unittest.TestCase):
     def test_sub2(self):
       #Testing that subtraction in sub2 function works
       result = calc.sub2(55,5)
-      self.assertEqual(result, 49)
+      self.assertEqual(result, 50)
 
 if __name__ == '__main__':
     unittest.main()
