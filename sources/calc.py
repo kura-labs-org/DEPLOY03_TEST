@@ -26,3 +26,11 @@ def add2(arg1, arg2):
         arg1conv = str(arg1conv)
         arg2conv = str(arg2conv)
     return arg1conv + arg2conv
+
+#Making Sub2 Function
+#Returns diference between 2 integers
+def sub2(arg1, arg2):
+  if arg1 > arg2 or arg1 == arg2:
+    return arg1 - arg2
+  else:
+    return arg2 - arg1
