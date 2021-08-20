@@ -56,15 +56,19 @@ class TestCalc(unittest.TestCase):
 #         self.assertEqual(result, -6)
 
      def add_num_decimals(self):
-        ask_question_1 = int(input("How many numbers do you want to add:))
-        sum = 0
+#         ask_question_1 = int(input("How many numbers do you want to add:))
+#         sum = 0
                                    
-        for i in range(0, ask_question_1):
-            num = int(input(""))
-            sum = sum + num
+#         for i in range(0, ask_question_1):
+#             num = int(input(""))
+#             sum = sum + num
                                    
-        result = calc.add2(0,sum):
-        self.assertEqual(result, sum)
+#         result = calc.add2(0,sum):
+        num1 = int(input("")
+        num2 = int(input("")
+        sum_of_2nums = str(num1+num2)           
+                  
+        self.assertEqual(result, sum_of_2nums)
 
 if __name__ == '__main__':
     unittest.main()
