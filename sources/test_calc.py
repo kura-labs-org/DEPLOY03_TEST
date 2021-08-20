@@ -65,11 +65,9 @@ class TestCalc(unittest.TestCase):
                                    
 #         result = calc.add2(0,sum):
 
-        num1 = 10
-        num2 = '9'
-        result = calc.add2(num1, num2)
+        result = calc.add2(10, '9')
                   
-        self.assertEqual(result, 45)
+        self.assertEqual(result, 19)
         #Can't implement int(input())?
 
 if __name__ == '__main__':
