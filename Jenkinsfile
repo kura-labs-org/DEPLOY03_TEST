@@ -6,7 +6,7 @@ pipeline {
     stage ('test') {
       
       steps{
-        sh 'mvn --version'
+        sh
         '''
        python3 -m venv test3
        source test3/bin/activate
