@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pipeline {
-  agent always
+  agent any
   stages {
     stage ('test') {
       steps{
