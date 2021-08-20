@@ -14,7 +14,7 @@ pipeline {
     stage ('Build') {
       steps{
         sh '''
-        'echo py.test --verbose --junit-xml test-reports/results.xml sources/add2vals.py'
+        py.test --verbose --junit-xml test-reports/results.xml sources/add2vals.py
         '''
             }
           
