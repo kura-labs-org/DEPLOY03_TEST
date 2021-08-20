@@ -56,19 +56,18 @@ class TestCalc(unittest.TestCase):
 #         self.assertEqual(result, -6)
 
     def add_many_nums(self):
-        ask_question_1 = int(input("How many numbers do you want to add:))
-        sum = 0
+    #    ask_question_1 = int(input("How many numbers do you want to add:))
+    #    sum = 0
                                    
-        for i in range(0, ask_question_1):
-            num = int(input(""))
-            sum = sum + num
+#         for i in range(0, ask_question_1):
+#             num = int(input(""))
+#             sum = sum + num
                                    
-        result = calc.add2(0,sum):
+#         result = calc.add2(0,sum):
 
-#         result = calc.add2(10, '9')
-                  
-#         self.assertEqual(result, 19)
-        #Can't implement int(input())?
+         result = calc.add2(10, '9')
+         self.assertEqual(result, 19)
+#         Can't implement int(input())?
 
 if __name__ == '__main__':
     unittest.main()
