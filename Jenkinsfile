@@ -1,12 +1,11 @@
 #!/bin/bash
 
 pipeline {
-  agent { docker { image 'python 3.7.11 } }
+  agent any
   stages {
     stage ('test') {
       
       steps{
-        sh 'python --version' 
         sh '''
        python3 -m venv test3
        source test3/bin/activate
