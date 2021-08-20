@@ -28,6 +28,9 @@ def add2(arg1, arg2):
     return arg1conv + arg2conv
 
 #Making Sub2 Function
-#returns diference between 2 integers
+#Returns diference between 2 integers
 def sub2(arg1, arg2):
-  return arg1 - arg2
+  if arg1 > arg2 or arg1 == arg2:
+    return arg1 - arg2
+  else:
+    return arg2 - arg1
