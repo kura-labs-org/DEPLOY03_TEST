@@ -64,11 +64,13 @@ class TestCalc(unittest.TestCase):
 #             sum = sum + num
                                    
 #         result = calc.add2(0,sum):
-        num1 = '0'
-        num2 = '1'
-        sum_of_2nums = num1 + num2
+
+        num1 = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+        num2 = '9'
+        result = calc.add2(num1, num2)
                   
-        self.assertEqual(result, sum_of_2nums)
+        self.assertEqual(result, 45)
+        #Can't implement int(input())?
 
 if __name__ == '__main__':
     unittest.main()
