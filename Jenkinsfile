@@ -9,9 +9,13 @@ pipeline {
        pip install pytest
        py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py
        
-       py.test --verbose --junit-xml test-reports/results.xml sources/add2vals.py
        '''
       }
+      stage ('run') {
+        steps{
+          sh '''
+           py.test --verbose --junit-xml test-reports/results.xml sources/add2vals.py
+          '''
     
       post {
         always {
@@ -20,4 +24,6 @@ pipeline {
       }
     }
   }
+}
+}
 }
