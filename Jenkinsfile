@@ -7,8 +7,8 @@ pipeline {
       
       steps{
         sh '''
-       python3 -m venv test3
-       source test3/bin/activate
+       python3 -m venv test
+       source test/bin/activate
        pip install pytest
        
        py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py
