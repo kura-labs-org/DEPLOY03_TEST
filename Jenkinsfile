@@ -1,10 +1,10 @@
 #!/bin/bash
 
 pipeline {
-  agent none
+  agent any
   stages {
     stage ('test') {
-      agent { docker 'maven:3.8.1-adoptopenjdk-11'}
+      
       steps{
         sh'''
        python3 -m venv test3
