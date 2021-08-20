@@ -60,8 +60,8 @@ class TestCalc(unittest.TestCase):
         sum = 0
                                    
         for i in range(0, ask_question_1):
-        num = int(input(""))
-        sum = sum + num
+            num = int(input(""))
+            sum = sum + num
                                    
         result = calc.add2(0,sum):
         self.assertEqual(result, sum)
