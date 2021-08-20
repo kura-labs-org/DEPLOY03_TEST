@@ -44,7 +44,7 @@ class TestCalc(unittest.TestCase):
         result = calc.add2('abc', '5.5')
         self.assertEqual(result, 'abc5.5')
         
-     #New code
+     #New code Shown below:
     
     def test_minus_integers(self):
         result = calc.add2(3, -5)
@@ -54,6 +54,8 @@ class TestCalc(unittest.TestCase):
 #     def test_minus_ints(self):
 #         result = calc.add2(3, -4):
 #         self.assertEqual(result, -6)
+
+#To take it a step further, I wanted no limit but to add as much numbers as the user wants
 
     def add_many_nums(self):
         sum = 0
