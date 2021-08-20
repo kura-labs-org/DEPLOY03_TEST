@@ -10,9 +10,7 @@ pipeline {
        py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py
        '''
         
-    stage ('run') {
-      py.test --verbose --junit-xml test-reports/results.xml sources/add2_vals.py 
-    }
+    
       
       }
     
