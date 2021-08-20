@@ -65,7 +65,7 @@ class TestCalc(unittest.TestCase):
                                    
 #         result = calc.add2(0,sum):
         num1 = '0'
-        num2 = int(input("")
+        num2 = '1'
         sum_of_2nums = num1 + num2
                   
         self.assertEqual(result, sum_of_2nums)
