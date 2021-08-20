@@ -56,9 +56,15 @@ class TestCalc(unittest.TestCase):
 #         self.assertEqual(result, -6)
 
     def add_many_nums(self):
-        num1 = int(input(""))        
-        result = calc.add2(num1, '0')
-        self.assertEqual(result, num1)
+        sum = 0
+        how_many_num = int(input(""))
+        for i in range(0, how_many_num):
+            num_enter = int(input(""))
+            sum = sum + num_enter
+        
+        #num1 = int(input(""))        
+        result = calc.add2(sum, '0')
+        self.assertEqual(result, sum)
         
         
         
