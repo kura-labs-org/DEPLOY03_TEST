@@ -9,13 +9,10 @@ pipeline {
        pip install pytest
        py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py
        '''
-      }
-   
-    stage ('run') {
-      steps{
-        sh '''
-      py.test --verbose --junit-xml test-reports/results.xml sources/add2_vals.py
-      '''
+        
+       sh '''
+       py.test --verbose --junit-xml test-reports/results.xml sources/add2vals.py
+       '''
       }
     
       post {
