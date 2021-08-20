@@ -65,7 +65,7 @@ class TestCalc(unittest.TestCase):
                                    
 #         result = calc.add2(0,sum):
 
-        num1 = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+        num1 = 10
         num2 = '9'
         result = calc.add2(num1, num2)
                   
