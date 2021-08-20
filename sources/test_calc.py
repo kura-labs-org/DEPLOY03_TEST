@@ -52,10 +52,8 @@ class TestCalc(unittest.TestCase):
         
     #Simple Math Calc Causes an Error!    
     def return_minus_int(self):
-        num1 = int(input(""))
-        minus = -1 * num1
-        result = calc.add2(minus, '0'):
-        self.assertEqual(result, minus)
+        result = calc.add2(-5, -1):
+        self.assertEqual(result, -6)
 
     def add_many_nums(self):
         sum = 0
