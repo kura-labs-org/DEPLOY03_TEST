@@ -57,7 +57,7 @@ class TestCalc(unittest.TestCase):
         while (num2 >=0 ):
             num2 = int(input(""))
         minus = num1 + num2
-        result = calc.add2(num1, num2):
+        result = calc.add2('0', minus):
         self.assertEqual(result, minus)
 
     def add_many_nums(self):
