@@ -51,9 +51,14 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(result, -2)
         
     #Simple Math Calc Causes an Error!    
-#     def test_minus_ints(self):
-#         result = calc.add2(3, -4):
-#         self.assertEqual(result, -6)
+    def test_minus_ints(self):
+        num1 = int(input(""))
+        num2 = int(input(""))
+        while (num2 >=0 ):
+            num2 = int(input(""))
+        minus = num1 + num2
+        result = calc.add2(num1, num2):
+        self.assertEqual(result, minus)
 
 #To take it a step further, I wanted no limit but to add as much numbers as the user wants
 
