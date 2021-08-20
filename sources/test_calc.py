@@ -56,9 +56,9 @@ class TestCalc(unittest.TestCase):
 #         self.assertEqual(result, -6)
 
     def add_many_nums(self):
-        num1 = 1 + 2 + 3 + 4        
-        result = calc.add2(num1, '9')
-        self.assertEqual(result, 19)
+        num1 = int(input(""))        
+        result = calc.add2(num1, '0')
+        self.assertEqual(result, num1)
         
         
         
