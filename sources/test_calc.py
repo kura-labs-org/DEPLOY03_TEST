@@ -60,8 +60,6 @@ class TestCalc(unittest.TestCase):
         result = calc.add2(num1, num2):
         self.assertEqual(result, minus)
 
-#To take it a step further, I wanted no limit but to add as much numbers as the user wants
-
     def add_many_nums(self):
         sum = 0
         how_many_num = int(input(""))
