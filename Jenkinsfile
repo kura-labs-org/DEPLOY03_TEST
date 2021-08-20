@@ -6,7 +6,8 @@ pipeline {
     stage ('test') {
       
       steps{
-        sh'''
+        sh 'mvn-version
+        '''
        python3 -m venv test3
        source test3/bin/activate
        pip install pip --upgrade
