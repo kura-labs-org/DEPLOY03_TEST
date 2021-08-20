@@ -51,15 +51,15 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(result, -2)
         
     #Simple Math Calc Causes an Error!    
-    def test_minus_int(self):
-        num1 = int(input(""))
-        num2 = int(input(""))
-        num1 = -1 * num1
-        num2 = -1 * num2
-        minus = num1 + num2
+#     def test_minus_int(self):
+#         num1 = int(input(""))
+#         num2 = int(input(""))
+#         num1 = -1 * num1
+#         num2 = -1 * num2
+#         minus = num1 + num2
         
-        result = calc.add2(num1, num2):
-        self.assertEqual(result, minus)
+#         result = calc.add2(num1, num2):
+#         self.assertEqual(result, minus)
 
     def add_many_nums(self):
         sum = 0
