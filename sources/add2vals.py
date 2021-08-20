@@ -58,7 +58,7 @@ if argnumbers == num :
     sum_str = str(sum)
     print(f"The result is {sum_str}")
           
-    print("The result is " + str(calc.add2(str(sys.argv[1]), str(sys.argv[2]))))      
+    print("The result for indexes 1 and 2 is " + str(calc.add2(str(sys.argv[1]), str(sys.argv[2]))))      
           
     #print("")
     sys.exit(0)
