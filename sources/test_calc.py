@@ -46,17 +46,17 @@ class TestCalc(unittest.TestCase):
          
     def test_subtract_integers(self):
         """
-        Test that the addition of two integers returns the correct total
+        Test that the subtraction of two integers returns the correct total
         """
-        result = calc.subtract3(1, 2, 3)
-        self.assertEqual(result, -4)
+        result = calc.subtract2(10, 2)
+        self.assertEqual(result, 8)
 
     def test_subtract_floats(self):
         """
-        Test that the addition of two floats returns the correct result
+        Test that the subtraction of two floats returns the correct result
         """
-        result = calc.subtract3('10.5', 2, 3)
-        self.assertEqual(result, 5.5)    
+        result = calc.subtract2('14.5', '4.2')
+        self.assertEqual(result, 10.3)    
 
 if __name__ == '__main__':
     unittest.main()
