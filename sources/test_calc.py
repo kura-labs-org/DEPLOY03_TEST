@@ -56,7 +56,7 @@ class TestCalc(unittest.TestCase):
         """
         Test that the addition of four floats returns the correct result
         """
-        result = calc.add4('10.5', 2, 5, 2.5)
+        result = calc.add4('10.5', 2, 5, '2.5')
         self.assertEqual(result, 20.0)
 
     def test_add4_strings(self):
@@ -80,7 +80,7 @@ class TestCalc(unittest.TestCase):
         Test the addition of a string and a float returns them as one
         concatenated string (in which the float is converted to a string)
         """
-        result = calc.add4('abc', '5.5', 'def', 2.5 )
+        result = calc.add4('abc', '5.5', 'def', '2.5' )
         self.assertEqual(result, 'abc5.5def2.5')
 
 if __name__ == '__main__':
