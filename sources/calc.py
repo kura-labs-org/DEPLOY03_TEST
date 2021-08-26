@@ -26,3 +26,14 @@ def add2(arg1, arg2):
         arg1conv = str(arg1conv)
         arg2conv = str(arg2conv)
     return arg1conv + arg2conv
+
+# The 'multi2' function itself
+def multi2(arg1, arg2):
+    # Convert 'arg1' and 'arg2' to their appropriate types
+    arg1conv = conv(arg1)
+    arg2conv = conv(arg2)
+    # If either 'arg1' or 'arg2' is a floats, ensure they're both floats.
+    if isinstance(arg1conv, float) or isinstance(arg2conv, float):
+        arg1conv = float(arg1conv)
+        arg2conv = float(arg2conv)
+    return arg1conv * arg2conv

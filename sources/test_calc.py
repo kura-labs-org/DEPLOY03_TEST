@@ -12,6 +12,13 @@ class TestCalc(unittest.TestCase):
         """
         result = calc.add2(1, 2)
         self.assertEqual(result, 3)
+        
+    def test_multi_integers(self):
+        """
+        Test that the addition of two integers returns the correct total
+        """
+        result = calc.multi2(4, 2)
+        self.assertEqual(result, 8)
 
     def test_add_floats(self):
         """
