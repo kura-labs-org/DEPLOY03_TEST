@@ -14,7 +14,7 @@ if argnumbers == 3 :
     print("")
     sys.exit(0)
     
-    elif argnumbers == 2:
+elif argnumbers == 2:
     print("")
     print("The result is " + str(calc.add2(str(sys.argv[1]), str(sys.argv[2]))))
     print("")
