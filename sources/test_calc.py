@@ -5,7 +5,6 @@ class TestCalc(unittest.TestCase):
     """
     Test the add function from the calc library
     """
-
     def test_add_integers(self):
         """
         Test that the addition of two integers returns the correct total
@@ -43,6 +42,45 @@ class TestCalc(unittest.TestCase):
         """
         result = calc.add2('abc', '5.5')
         self.assertEqual(result, 'abc5.5')
+        
+    def test_add_integers(self):
+        """
+        Test that the addition of two integers returns the correct total
+        """
+        result = calc.add3(1, 2, 3)
+        self.assertEqual(result, 6)
+
+    def test_add_floats(self):
+        """
+        Test that the addition of two floats returns the correct result
+        """
+        result = calc.add3('10.5', 2, 7)
+        self.assertEqual(result, 19.5)
+
+    def test_add_strings(self):
+        """
+        Test the addition of two strings returns the two strings as one
+        concatenated string
+        """
+        result = calc.add3('abc', 'def','ghi')
+        self.assertEqual(result, 'abcdefghi')
+
+    def test_add_string_and_integer(self):
+        """
+        Test the addition of a string and an integer returns them as one
+        concatenated string (in which the integer is converted to a string)
+        """
+        result = calc.add3('abc', 3, 'd')
+        self.assertEqual(result, 'abc3d')
+
+    def test_add_string_and_number(self):
+        """
+        Test the addition of a string and a float returns them as one
+        concatenated string (in which the float is converted to a string)
+        """
+        result = calc.add3('abc', '5.5','def')
+        self.assertEqual(result, 'abc5.5def')
+
 
 if __name__ == '__main__':
     unittest.main()
