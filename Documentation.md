@@ -15,6 +15,11 @@
 ### try to change the test code so that it fails
 ![Screenshot 2021-08-14 164524](https://user-images.githubusercontent.com/60336145/131222850-c2477a7a-d58a-4a58-84c3-ac6ab3d4cc79.png)
 ### after the first fail try to fix your code so that it passes the the test (give it a new test to pass)
+## I added a third value to be computed in the the test 
+![Screenshot 2021-08-28 112852](https://user-images.githubusercontent.com/60336145/131222992-670daab4-d5e1-4485-9d72-bcb710346bec.png)
+![Screenshot 2021-08-28 112918](https://user-images.githubusercontent.com/60336145/131222994-f9ae9944-f829-45c3-b166-6270c94a673d.png)
+![Screenshot 2021-08-28 113004](https://user-images.githubusercontent.com/60336145/131222997-e1073e26-77de-4bec-bf1d-29791d4e0672.png)
+
 ![Screenshot 2021-08-21 112802](https://user-images.githubusercontent.com/60336145/131222873-422f146c-00ac-43e0-b3a4-150582d6fa26.png)
 ![Screenshot 2021-08-21 113153](https://user-images.githubusercontent.com/60336145/131222877-1b86f405-c952-4754-98b6-349ea8f988f8.png)
 
