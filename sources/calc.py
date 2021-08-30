@@ -26,3 +26,18 @@ def add2(arg1, arg2):
         arg1conv = str(arg1conv)
         arg2conv = str(arg2conv)
     return arg1conv + arg2conv
+
+# The 'add4' function itself
+def add4(arg1, arg2, arg3, arg4):
+    # Convert 'arg1' , 'arg2' , 'arg3' and 'arg4' to their appropriate types
+    arg1conv = conv(arg1)
+    arg2conv = conv(arg2)
+    arg3conv = conv(arg3)
+    arg4conv = conv(arg4)
+    # If either 'arg1' , 'arg2' , 'arg3' and 'arg4' is a string, ensure they're both strings.
+    if isinstance(arg1conv, str) or isinstance(arg2conv, str) or isinstance(arg3conv, str) or isinstance(arg4conv, str):
+        arg1conv = str(arg1conv)
+        arg2conv = str(arg2conv)
+        arg3conv = str(arg3conv)
+        arg4conv = str(arg4conv)
+    return arg1conv + arg2conv + arg3conv + arg4conv
