@@ -55,8 +55,8 @@ class TestCalc(unittest.TestCase):
         """
         Test that the subtraction of three floats returns the correct result
         """
-        result = calc.subtract3('14.5', '4.2', '0.2')
-        self.assertEqual(result, 10.1)    
+        result = calc.subtract3('14.5', '4.2', '0.3')
+        self.assertEqual(result, 10.0)    
 
 if __name__ == '__main__':
     unittest.main()
