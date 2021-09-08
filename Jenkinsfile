@@ -14,7 +14,8 @@ pipeline {
    post {
     always {
       junit 'test-reports/result.xml'
-      }
+     }
+   }
   }
  }
 }
