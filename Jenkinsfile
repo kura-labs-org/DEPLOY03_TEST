@@ -8,7 +8,7 @@ pipeline {
         source test3/bin/activate
         pip install pip --upgrade
         pip install pytest
-        pytest test.py --verbose --junit-xml results.xml sources/test_calc.py
+        pytest test_calc.py --verbose --junit-xml results.xml sources/test_calc.py
         '''
      }
    post {
