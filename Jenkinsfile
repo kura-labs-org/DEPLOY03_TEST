@@ -13,7 +13,7 @@ pipeline {
      }
    post {
     always {
-      junit './workspace/deploy3-test2_main/result.xml'
+      junit './workspace/deploy3-test2_main/'
      }
    }
   }
