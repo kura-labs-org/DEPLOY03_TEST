@@ -8,12 +8,12 @@ pipeline {
         source test3/bin/activate
         pip install pip --upgrade
         pip install pytest
-        py.test --verbose --junit-xml results.xml sources/test_calc.py
+        py.test --verbose --junit-xml ./workspace/deploy3-test2_main/results.xml sources/test_calc.py
         '''
      }
    post {
     always {
-      junit 'result.xml'
+      junit './workspace/deploy3-test2_main/result.xml'
      }
    }
   }
