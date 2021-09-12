@@ -33,7 +33,7 @@ def sub2(var1,var2):
     arg1conv = conv(var1)
     arg2conv = conv(var2)
     # If either 'arg1' or 'arg2' is a string, ensure they're both strings.
-    if isinstance(arg1conv, str) or isinstance(arg2conv, str):
-        return 'cannot subtract non-numeric values'
+#     if isinstance(arg1conv, str) or isinstance(arg2conv, str):
+#         return 'cannot subtract non-numeric values'
     return arg1conv - arg2conv
 
