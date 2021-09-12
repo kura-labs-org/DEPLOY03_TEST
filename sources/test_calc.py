@@ -44,5 +44,34 @@ class TestCalc(unittest.TestCase):
         result = calc.add2('abc', '5.5')
         self.assertEqual(result, 'abc5.5')
 
+
+    """
+    Testing the new feature 
+    """
+    def test_sub_integers(self):
+
+        result = calc.sub2(1, 3)
+        self.assertEqual(result, -2)
+
+    def test_sub_floats(self):
+
+        result = calc.sub2('10.5', 2)
+        self.assertEqual(result, 8.5)
+
+    def test_sub_strings(self):
+
+        result = calc.sub2('abc', 'def')
+        self.assertEqual(result, 'cannot subtract non-numeric values')
+
+    def test_sub_string_and_integer(self):
+
+        result = calc.sub2('abc', 3)
+        self.assertEqual(result, 'cannot subtract non-numeric values')
+
+    def test_sub_string_and_number(self):
+
+        result = calc.sub2('abc', '5.5')
+        self.assertEqual(result, 'cannot subtract non-numeric values')        
+        
 if __name__ == '__main__':
     unittest.main()
