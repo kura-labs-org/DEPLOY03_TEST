@@ -26,3 +26,31 @@ def add2(arg1, arg2):
         arg1conv = str(arg1conv)
         arg2conv = str(arg2conv)
     return arg1conv + arg2conv
+
+# Determines and sets the type of input entered by user
+def set_type(value1):
+    value2 = value1
+    try:
+      value2 = int(value1)
+    except:
+      try:
+        value2 = float(value1)
+      except:
+        pass
+    return value2
+
+# The 'multi2' function accepts 2 float arguments 
+def multi2(arg1, arg2):
+    # Convert 'arg1' and 'arg2' to their appropriate types
+    arg1conv = set_type(arg1)
+    arg2conv = set_type(arg2)
+    # If either 'arg1' or 'arg2' is a string, ensure they're both strings.
+    if (isinstance(arg1conv, int) and isinstance(arg2conv, int)) or \
+        (isinstance(arg1conv, float) and isinstance(arg2conv, float)) or \
+        (isinstance(arg1conv, str) and isinstance(arg2conv, int)) or \
+        (isinstance(arg1conv, int) and isinstance(arg2conv, str)) or \
+        (isinstance(arg1conv, int) and isinstance(arg2conv, float)) or \
+        (isinstance(arg1conv, float) and isinstance(arg2conv, int)):
+        return arg1conv * arg2conv
+    else: 
+        return 'Can not multiply two strings nor a float and a string'
