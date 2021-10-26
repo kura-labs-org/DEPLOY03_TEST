@@ -15,5 +15,10 @@ Once you have ran a test build and produced a test report. Create an additional 
 - [x]Initiate a pull request to the kura_labs_org/DEPLOY_3_TEST repo with your documentation, screenshots(add screenshots to documentation), test_calc.py with your added test, and add2vals.py with your added feature or component.   
 
 👉Link to **some** helpful instructions: [here](https://github.com/kura-labs-org/DEPLOY03_TEST/blob/main/Deployment%203.pdf)  
+
+When I tried to push
 ![image](https://user-images.githubusercontent.com/16675605/138919007-96b26da2-b7c1-46a5-a6fa-99954a7d555b.png)
+
+![image](https://user-images.githubusercontent.com/16675605/138930060-c260a53f-288d-4c19-aa5b-75c59d357d0c.png)
+
 
