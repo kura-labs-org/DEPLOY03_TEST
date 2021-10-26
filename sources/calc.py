@@ -38,5 +38,6 @@ def sub(arg1, arg2):
     arg2conv = conv(arg2)
     # If either 'arg1' or 'arg2' is a string, ensure they're both strings.
     if isinstance(arg1conv, str) or isinstance(arg2conv, str):
-        return 'you cannnot subtract strings'
+        arg1conv = str(arg1conv)
+        arg2conv = str(arg2conv)
     return arg1conv - arg2conv
