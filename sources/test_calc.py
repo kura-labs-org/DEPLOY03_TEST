@@ -1,6 +1,7 @@
 import unittest
 import calc
 
+
 class TestCalc(unittest.TestCase):
     """
     Test the add function from the calc library
@@ -43,6 +44,15 @@ class TestCalc(unittest.TestCase):
         """
         result = calc.add2('abc', '5.5')
         self.assertEqual(result, 'abc5.5')
+
+    def test_sub(self):
+        """
+        Test the addition of two strings returns the two strings as one
+        concatenated string
+        """
+        result = calc.sub('abc', 'def')
+        self.assertEqual(result, 'you cannnot subtract strings')
+
 
 if __name__ == '__main__':
     unittest.main()
