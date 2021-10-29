@@ -25,7 +25,9 @@ The purpose of this deployment is to build on top of previous deployments using 
 
 <h2>Steps</h2>
 
-First build was completed using Freestyle Jenkins Pipeline option
+First build was completed using Freestyle Jenkins Pipeline option, These steps are standard steps involving setting up an EC2 on AWS, followed by downloading the necessary programs that would allow for Jenkins to run, then setting up a pipeline in Jenkins that would pull from this specific repository.
+
+This build will pull the Add2vals.py script, which utilizes a sys arg function. This means that when the program is invoked, it will also take a set number of arguments along with it during the first initial input. For example "python add2vals.py 1 2" which would add two integers that are placed after the script name. In this case, it would be 1 and 2, thus running the addition operator against them after checking that these are integers.
 
 
 <h3<Second Objective</h3>
