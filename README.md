@@ -23,7 +23,7 @@ Once you have ran a test build and produced a test report. Create an additional 
 
 The purpose of this deployment is to build on top of previous deployments using Jenkins. In this deployment, we will learn about pytest, which is a module used in conjunction with the building functions of Jenkins. The pytest module will be incorporated into a script written specifically to test the current program, which is add2py. The results expected will be the matched against the arguments in the test.
 
-<h2>Documentation</h2>
+<h2>Steps</h2>
 
 First build was completed using Freestyle Jenkins Pipeline option
 
