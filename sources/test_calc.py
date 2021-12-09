@@ -44,5 +44,22 @@ class TestCalc(unittest.TestCase):
         result = calc.add2('abc', '5.5')
         self.assertEqual(result, 'abc5.5')
 
+    def test_multply_integers(self):
+        """
+        Test the addition of a string and a float returns them as one
+        concatenated string (in which the float is converted to a string)
+        """
+        result = calc.mul2(4, 8)
+        self.assertEqual(result, 32)
+
+    def test_multiply_floats(self):
+        """
+        Test that the addition of two floats returns the correct result
+        """
+        result = calc.mul2('10.5', 2)
+        self.assertEqual(result, 21.0)
+
+
+
 if __name__ == '__main__':
     unittest.main()
